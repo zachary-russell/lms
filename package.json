@@ -1,0 +1,22 @@
+{
+  "name": "link-management-system",
+  "version": "0.0.1",
+  "description": "A basic app for me to manage my links, kinda like advanced bookmarks :)",
+  "main": "index.js",
+  "scripts": {
+    "test": "node server index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zachary-russell/lms.git"
+  },
+  "author": "Zachary Russell",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/zachary-russell/lms/issues"
+  },
+  "homepage": "https://github.com/zachary-russell/lms#readme",
+  "dependencies": {
+    "express": "^4.15.3"
+  }
+}
