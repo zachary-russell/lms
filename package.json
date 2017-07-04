@@ -19,6 +19,7 @@
   "dependencies": {
     "async": "^2.5.0",
     "express": "^4.15.3",
+    "pug": "^2.0.0-rc.2",
     "rethinkdb": "^2.3.3"
   }
 }
