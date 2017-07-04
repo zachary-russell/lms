@@ -3,3 +3,10 @@ html
         title= title
     body
         h1=message
+        ul
+
+        mixin linkList(link)
+          li= link.name
+
+        for link in links
+          +linkList(link)

@@ -14,10 +14,14 @@ app.get('/', function(req, res) {
     })
 });
 app.get('/hello', function(req, res) {
-    res.render('index', { title: 'Hey', message: 'Hello there!' })
+    var params = req.query;
+    var links = db.getLinks(params, function(err, response) {
+        if(err) throw err;
+        res.render('index', { title: 'hello', message: 'Hello There', links: response })
+    })
+    //res.render('index', { title: 'Hey', message: 'Hello there!', links: links })
 });
 
 app.listen(3000, function() {
     console.log('app is listening on port 3000!');
 })
-
